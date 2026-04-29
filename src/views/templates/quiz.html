@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario Premium - Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container animate-fade">
+        <div class="progress-bar">
+            <div id="progressFill" class="progress-fill"></div>
+        </div>
+        
+        <div id="quizContent">
+            <div class="quiz-header">
+                <span id="questionNumber">Pregunta 1 de 5</span>
+            </div>
+
+            <div class="question-card">
+                <h2 id="questionText">Cargando pregunta...</h2>
+                <div id="optionsContainer" class="options-container">
+                    <!-- Opciones se cargarán con JS -->
+                </div>
+            </div>
+
+            <div style="margin-top: 30px;">
+                <button id="nextBtn" class="btn btn-primary" style="display: none;">Siguiente</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/quiz.js') }}"></script>
+</body>
+</html>

@@ -1,11 +1,10 @@
 # Active Context
 
 ## Enfoque Actual
-- Implementación del Backend (Flask + MVC).
-- Definición del Modelo de Datos (JSON) y lógica de acceso.
-- Configuración de controladores y rutas.
+- Proyecto completado: Backend y Frontend integrados.
+- Pruebas de flujo completo realizadas.
 
 ## Próximos Pasos
-1. Desarrollar las plantillas HTML (Vistas) con diseño premium.
-2. Implementar la lógica de JavaScript para la interactividad del quiz.
-3. Añadir estilos CSS dinámicos y responsivos.
+1. Realizar pruebas de usuario finales.
+2. Añadir más preguntas al archivo JSON.
+3. Posible implementación de un temporizador por pregunta.

@@ -8,6 +8,6 @@
 - [x] Implementación del servidor Flask.
 - [x] Desarrollo del Modelo (preguntas JSON).
 - [x] Desarrollo de Controladores (Rutas y API).
-- [ ] Desarrollo de Vistas (Templates HTML).
-- [ ] Desarrollo de la lógica JS Frontend.
-- [ ] Aplicar estilos CSS Premium.
+- [x] Desarrollo de Vistas (Templates HTML).
+- [x] Desarrollo de la lógica JS Frontend.
+- [x] Aplicar estilos CSS Premium.

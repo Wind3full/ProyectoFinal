@@ -9,19 +9,18 @@ def index():
     """Ruta principal: Página de inicio."""
     session['score'] = 0
     session['current_question'] = 0
+    session['history'] = [] # Guardaremos {question: str, correct: bool}
     return render_template('index.html')
 
 @quiz_bp.route('/quiz')
 def quiz():
     """Ruta para mostrar la interfaz del cuestionario."""
-    questions = model.get_all_questions()
-    return render_template('quiz.html', questions=questions)
+    return render_template('quiz.html')
 
 @quiz_bp.route('/api/questions', methods=['GET'])
 def get_questions():
     """Endpoint API para obtener preguntas (usado por JS)."""
     questions = model.get_all_questions()
-    # No enviamos el correct_index al cliente por seguridad/evitar trampas fáciles
     safe_questions = []
     for q in questions:
         safe_questions.append({
@@ -38,10 +37,19 @@ def check_answer():
     question_id = data.get('question_id')
     answer_index = data.get('answer_index')
     
+    question = model.get_question_by_id(question_id)
     is_correct = model.validate_answer(question_id, answer_index)
     
     if is_correct:
         session['score'] = session.get('score', 0) + 1
+    
+    # Guardar en historial
+    history = session.get('history', [])
+    history.append({
+        "question": question['question'],
+        "correct": is_correct
+    })
+    session['history'] = history
         
     return jsonify({"correct": is_correct})
 
@@ -49,5 +57,6 @@ def check_answer():
 def results():
     """Ruta para mostrar los resultados finales."""
     score = session.get('score', 0)
+    history = session.get('history', [])
     total = len(model.get_all_questions())
-    return render_template('results.html', score=score, total=total)
+    return render_template('results.html', score=score, total=total, history=history)
