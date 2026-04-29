@@ -1,0 +1,26 @@
+# Entornos virtuales
+venv/
+env/
+.env
+.venv
+ENV/
+
+# Python cache y bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# IDEs y Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Flask
+instance/
+.webassets-cache

@@ -11,3 +11,4 @@
 - [x] Desarrollo de Vistas (Templates HTML).
 - [x] Desarrollo de la lógica JS Frontend.
 - [x] Aplicar estilos CSS Premium.
+- [x] Configuración de .gitignore.
