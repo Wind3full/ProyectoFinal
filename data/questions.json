@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "question": "¿Qué lenguaje de programación se utiliza principalmente para el backend en este proyecto?",
+        "options": ["JavaScript", "Python", "Java", "C++"],
+        "correct_index": 1
+    },
+    {
+        "id": 2,
+        "question": "¿Cuál de estos es un framework web para Python?",
+        "options": ["React", "Laravel", "Flask", "Spring"],
+        "correct_index": 2
+    },
+    {
+        "id": 3,
+        "question": "¿Qué patrón de arquitectura estamos siguiendo?",
+        "options": ["MVVM", "Microservicios", "MVC", "Monolítico simple"],
+        "correct_index": 2
+    },
+    {
+        "id": 4,
+        "question": "¿Para qué sirve el archivo 'memory-bank'?",
+        "options": ["Guardar fotos", "Documentar el estado y contexto del proyecto", "Configurar el servidor", "Guardar contraseñas"],
+        "correct_index": 1
+    },
+    {
+        "id": 5,
+        "question": "¿Qué lenguaje se encarga de la estructura de una página web?",
+        "options": ["CSS", "JavaScript", "Python", "HTML"],
+        "correct_index": 3
+    }
+]

@@ -5,7 +5,9 @@
 - [x] Creación de especificaciones iniciales.
 - [x] Configuración de instrucciones de desarrollo.
 - [x] Inicialización del Memory Bank.
-- [ ] Implementación del servidor Flask.
-- [ ] Desarrollo del Modelo (preguntas).
-- [ ] Desarrollo de Vistas (UI).
-- [ ] Desarrollo del Controlador (Lógica).
+- [x] Implementación del servidor Flask.
+- [x] Desarrollo del Modelo (preguntas JSON).
+- [x] Desarrollo de Controladores (Rutas y API).
+- [ ] Desarrollo de Vistas (Templates HTML).
+- [ ] Desarrollo de la lógica JS Frontend.
+- [ ] Aplicar estilos CSS Premium.
